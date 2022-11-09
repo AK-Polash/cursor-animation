@@ -9,15 +9,17 @@ function cursorAni(e) {
 
   body.appendChild(circleDiv);
 
-  if (circleListArr.length == 20) {
-    body.removeChild(circleDiv);
+  if (circleListArr.length > 30) {
+    circleListArr.map((item) => {
+      item.remove();
+    });
   }
 
   circleDiv.style.transition = "all linear 0.3s";
   circleDiv.style.left = e.clientX + "px";
   circleDiv.style.top = e.clientY + "px";
-  circleDiv.style.left = circleDiv.offsetLeft - 10 + "px";
-  circleDiv.style.top = circleDiv.offsetTop - 10 + "px";
+  circleDiv.style.left = circleDiv.offsetLeft - 20 + "px";
+  circleDiv.style.top = circleDiv.offsetTop - 20 + "px";
   circleDiv.style.visibility = "hidden";
 }
 
