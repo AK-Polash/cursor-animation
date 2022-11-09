@@ -15,28 +15,39 @@ a {
   text-decoration: none;
 }
 .circle {
+  background: transparent;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid #0652DD;
+  border: 1px solid #0d1be38c;
   position: absolute;
   transform: translate(-50%, -25%);
   animation: blink 0.3s ease-in 10ms infinite;
 }
 @keyframes blink {
   0% {
-    border: 2px solid #ea2027;
+    border: 2px solid #87ceeb;
+    width: 40px;
+    height: 40px;
   }
   25% {
     border: 3px solid #2ecc71;
+    width: 35px;
+    height: 35px;
   }
   50% {
     border: 3px solid #f1c40f;
+    width: 25px;
+    height: 25px;
   }
   75% {
     border: 3px solid #9980fa;
+    width: 20px;
+    height: 20px;
   }
   100% {
     border: 3px solid #e74c3c;
+    width: 15px;
+    height: 15px;
   }
 }

@@ -18,8 +18,8 @@ function cursorAni(e) {
   circleDiv.style.transition = "all linear 0.3s";
   circleDiv.style.left = e.clientX + "px";
   circleDiv.style.top = e.clientY + "px";
-  circleDiv.style.left = circleDiv.offsetLeft - 20 + "px";
-  circleDiv.style.top = circleDiv.offsetTop - 20 + "px";
+  circleDiv.style.left = circleDiv.offsetLeft - 30 + "px";
+  circleDiv.style.top = circleDiv.offsetTop - 30 + "px";
   circleDiv.style.visibility = "hidden";
 }
 
