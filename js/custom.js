@@ -15,7 +15,7 @@ function cursorAni(e) {
     });
   }
 
-  circleDiv.style.transition = "all linear 0.3s";
+  circleDiv.style.transition = "all linear 0.31s";
   circleDiv.style.left = e.clientX + "px";
   circleDiv.style.top = e.clientY + "px";
   circleDiv.style.left = circleDiv.offsetLeft - 30 + "px";
